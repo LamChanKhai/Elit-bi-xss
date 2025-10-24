@@ -48,4 +48,6 @@ Vậy là xss thành công, trong mã js chèn vào mình có fetch đê
 
 Từ đó có thể lấy được cookie của nạn nhân. Kiểm tra trong cookie của mình thì mình thấy có trường clsroomtool, đây chính là seassion, nhưng tiếc là nó đã được gắn cờ HttpOnly nên mình không thể lấy được nó để cướp phiên làm việc của nạn nhân.
 
-Ở đây mình thấy có trường csrf_token trong cookie của nạn nhân và khi gửi POST đến /edit/ cũng có một trường middleware csrf 
+Ở đây mình thấy có trường csrf_token trong cookie của nạn nhân và khi gửi POST đến /edit/ cũng có một trường csrf middleware token, tìm hiểu một chút thì biết được Django sẽ tạo ra một csrf middleware token dựa vào header X-CSRF-TOKEN, nghĩa là bây giờ mình chỉ cần thêm X-CSRF-TOKEN vào header với csrf token lấy được của nạn nhân và xóa đi csrf middleware token ở body để django tự tạo một cái mới thì có thể edit được profile của nạn nhân. Chỉnh sửa lại script một chút và cho một nạn nhân bấm vào link. Lúc này profile của nạn nhân sẽ tự động bị chỉnh sửa.
+
+
