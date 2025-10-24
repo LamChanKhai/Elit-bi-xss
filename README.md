@@ -51,3 +51,10 @@ Từ đó có thể lấy được cookie của nạn nhân. Kiểm tra t
 Ở đây mình thấy có trường csrf_token trong cookie của nạn nhân và khi gửi POST đến /edit/ cũng có một trường csrf middleware token, tìm hiểu một chút thì biết được Django sẽ tạo ra một csrf middleware token dựa vào header X-CSRF-TOKEN, nghĩa là bây giờ mình chỉ cần thêm X-CSRF-TOKEN vào header với csrf token lấy được của nạn nhân và xóa đi csrf middleware token ở body để django tự tạo một cái mới thì có thể edit được profile của nạn nhân. Chỉnh sửa lại script một chút và cho một nạn nhân bấm vào link. Lúc này profile của nạn nhân sẽ tự động bị chỉnh sửa.
 
 
+<p align="center">
+  <img src="./imgs/download.jpg" width="200">
+</p>
+
+<p align="center">
+  <img src="./imgs/z7148869918993_86a0672f17eb34f22320e6e7a2ff9f7c.jpg" width="700">
+</p>
