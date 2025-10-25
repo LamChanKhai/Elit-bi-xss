@@ -58,3 +58,5 @@ Từ đó có thể lấy được cookie của nạn nhân. Kiểm tra t
 <p align="center">
   <img src="./imgs/z7148869918993_86a0672f17eb34f22320e6e7a2ff9f7c.jpg" width="700">
 </p>
+
+Khi này mình hoàn toàn có thể thay đổi trang certificate của nạn nhân thành một trang xss y như của mình và khi một sinh viên khác xem chứng chỉ của nạn nhân, sinh viên đó cũng bị "lây nhiễm" (trang chứng chỉ của sinh viên cũng chứa mã js). Đồng thời thay đổi trang cv thay đỗi thành 1 malware hay backdoor. 
