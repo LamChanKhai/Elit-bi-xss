@@ -71,6 +71,6 @@ Sau đó mình có thấy ở trang xem profile có cho phép tải xuô�
 Kết hợp với xss và csrf, khi này mình có kịch bản tấn công như sau, đầu tiên mình sẽ up một file cerfiticate chứa mã js làm thay đổi profile của bất kì ai xem chứng chỉ này (thay đổi cv và certificate). Mình sẽ thay cv của nạn nhân thành một malware hay backdoor gì đó, còn certificate của nạn nhân sẽ là một file cerfiticate chứa mã js giống của mình, khi này nạn nhân đầu tiên cũng đã trở thành một người đi "lây nhiễm", bất kì ai xem chứng chỉ của người bị "nhiễm" cũng sẽ bị "nhiễm" . Chỉ cần một ai đó tải cv của người bị "nhiễm" và thực thi file .exe khi không có phần mềm diệt viruss.
 
 <p align="center">
-  <img src="./imgs/Screenshot 2025-10-25 111315.png" width="700">
+  <img src="./imgs/Screenshot 2025-10-25 141655.png" width="700">
 </p>
 
