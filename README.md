@@ -59,4 +59,13 @@ Từ đó có thể lấy được cookie của nạn nhân. Kiểm tra t
   <img src="./imgs/z7148869918993_86a0672f17eb34f22320e6e7a2ff9f7c.jpg" width="700">
 </p>
 
-Khi này mình hoàn toàn có thể thay đổi trang certificate của nạn nhân thành một trang xss y như của mình và khi một sinh viên khác xem chứng chỉ của nạn nhân, sinh viên đó cũng bị "lây nhiễm" (trang chứng chỉ của sinh viên cũng chứa mã js). Đồng thời thay đổi trang cv thay đỗi thành 1 malware hay backdoor. 
+Sau đó mình có thấy ở trang xem profile có cho phép tải xuống CV nên mình thử up một file .exe để làm cv cho mình, và mình đã up thành công vì server chỉ kiểm tra content-type mà không kiểm tra đuôi file hay magicbytes.
+<p align="center">
+  <img src="./imgs/Screenshot 2025-10-25 111232.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./imgs/Screenshot 2025-10-25 111315.png" width="700">
+</p>
+
+Kết hợp với xss và csrf, khi này mình có kịch bản tấn công như sau, đầu tiên mình sẽ up một file cerfiticate chứa mã js làm thay đổi profile của bất kì ai xem chứng chỉ này (thay đổi cv và certificate). Mình sẽ thay cv của nạn nhân thành một malware hay backdoor gì đó, còn certificate của nạn nhân sẽ là một file cerfiticate chứa mã js giống của mình, khi này nạn nhân đầu tiên cũng đã trở thành một người đi "lây nhiễm". Chỉ cần một ai đó tải cv của người bị "nhiễm" và thực thi file .exe khi không có phần mềm diệt viruss
