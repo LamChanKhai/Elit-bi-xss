@@ -74,3 +74,9 @@ Kết hợp với xss và csrf, khi này mình có kịch bản tấn c�
   <img src="./imgs/Screenshot 2025-10-25 141655.png" width="700">
 </p>
 
+__UPDATE__
+
+<p align="center">
+  <img src="./imgs/Screenshot 2025-10-26 220346.png" width="700">
+</p>
+ Sau khi báo cáo cho khoa, đã có bản vá.
